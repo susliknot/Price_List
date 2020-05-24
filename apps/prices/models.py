@@ -7,7 +7,7 @@ class Product(models.Model):
     label = models.IntegerField(null=True)
 
     def __str__(self):
-        return self.name, self.description
+        return self.name
 
 
 class Price(models.Model):
@@ -15,6 +15,5 @@ class Price(models.Model):
     price = models.FloatField()
     date = models.DateField()
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.name = None
+    def __str__(self):
+        return self.product.name
