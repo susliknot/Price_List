@@ -1,3 +1,9 @@
+#Superuser created
+    #Username: denis
+    #Email address: denigilk@gmail.com
+    #Password: superuser
+
+
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
